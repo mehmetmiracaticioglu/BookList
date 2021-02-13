@@ -14,5 +14,9 @@ namespace BookList.Models
         }
         public DbSet<Book> Book { get; set; }
 
+        internal Task<Book> FindAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
